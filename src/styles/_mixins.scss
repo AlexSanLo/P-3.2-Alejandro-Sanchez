@@ -1,0 +1,19 @@
+@use "sass:map";
+
+$breakpoints: (
+  "small": "max-width: 599px",
+  "medium": "max-width: 1199px",
+  "large": "min-width: 1200px"
+);
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map.get($breakpoints, $breakpoint); // Obtiene directamente la consulta
+
+  @if $raw-query {
+    @media (#{$raw-query}) { // Aplica directamente la media query
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. Please check `$breakpoints`.';
+  }
+}
