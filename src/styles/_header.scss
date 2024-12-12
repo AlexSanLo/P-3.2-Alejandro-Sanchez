@@ -1,1 +1,41 @@
 @use "global" as *;
+
+header {
+    background-color: $color-blue-soft;
+    font-family: $typography-fonts-family-1;
+    display: flex;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+
+            p {
+                font-size: $typography-tamanio-h4;
+
+                @include respond-to("small") {
+                    font-size: $typography-tamanio-paragraph;
+                }
+            }
+
+            nav {
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    color: $typography-colors-blue;
+                    padding-right: $padding-right-header-a;
+                    font-size: $typography-tamanio-h4;
+
+                    @include respond-to("small") {
+                        font-size: $typography-tamanio-paragraph;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

@@ -19,19 +19,38 @@
     $typography-colors-white: #ffffff;
 
 
-//Weights and Heights
-    $icons-height: 1.875rem;
-    $icons-width: 1.875rem;
+//Width and Heights
+    $height-icons: 1.875rem;
+    $height-header: 80px;
+    $height-footer: 90px;
+    $height-icons-small: 1.25rem;
+    $height-buttons: 40px;
+
+    $width-icons: 1.875rem;
+    $width-icons-small: 1.25rem;
+    $width-container: 90%;
+    $width-index-p4: 740px;
+    $width-buttons: 110px;
+
 
 
 //Margins and Paddings
+    $padding-right-header-a: 26px;
+    $padding-right-footer-a: 20px;
+    $padding-right-footer-a-small: 10px;
+    $padding-top-content-p: 30px;
+    $padding-top-content-p2: 0px;
+    $margin-right-buttons:30px;
+    $margin-left-buttons:30px;
+    $margin-top-botton-buttons:60px;
+    
 
 
 
 //Typography line height
     $typography-interlineado-small: 1.125rem;
-    $typography-interlineado-paragraph: 1.625rem;
-    $typography-interlineado-h4: 2rem;
+    $typography-interlineado-paragraph: 1.5rem;
+    $typography-interlineado-h4: 1.75rem;
     $typography-interlineado-h3: 2.75rem;
     $typography-interlineado-h2: 3rem;
     $typography-interlineado-h1: 4.5rem;
@@ -39,8 +58,8 @@
 
 //Typography Size
     $typography-tamanio-small: 0.875rem;
-    $typography-tamanio-paragraph: 1.25rem;
-    $typography-tamanio-h4: 1.5rem;
+    $typography-tamanio-paragraph: 1rem;
+    $typography-tamanio-h4: 1.25rem;
     $typography-tamanio-h3: 2rem;
     $typography-tamanio-h2: 2.625rem;
     $typography-tamanio-h1: 4.25rem;
@@ -57,6 +76,3 @@
     $typography-fonts-family-1: Domine;
     $typography-fonts-family-2: Architects Daughter;
 
-
-
-  

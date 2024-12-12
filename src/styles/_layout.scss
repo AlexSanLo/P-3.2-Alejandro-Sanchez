@@ -1,1 +1,22 @@
 @use "global" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: $width-container;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+}
+
+footer {
+    height: $height-footer;
+}
+
+header {
+    height: $height-header;
+}

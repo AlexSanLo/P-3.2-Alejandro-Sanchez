@@ -1,1 +1,49 @@
 @use "global" as *;
+
+footer {
+    background-color: $color-blue-soft;
+    font-family: $typography-fonts-family-1;
+    display: flex;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+
+            a {
+                padding-right: $padding-right-footer-a;
+
+                img {
+                    width: $width-icons;
+                    height: $height-icons;
+
+                    @include respond-to("small") {
+                        width: $width-icons-small;
+                        height: $height-icons-small;
+                    }
+                }
+
+                @include respond-to("small") {
+                    padding-right:  $padding-right-footer-a-small;
+                }
+            }
+
+            span {
+                color: $color-blue;
+                font-size: $typography-tamanio-h4;
+
+                @include respond-to("small") {
+                    font-size: $typography-tamanio-paragraph;
+                }
+
+            }
+
+        }
+    }
+}
+
+.fa-blue {
+    color: $color-blue;
+}
