@@ -12,7 +12,7 @@ $breakpoints: (
   @if $raw-query {
     @media (#{$raw-query}) { // Aplica directamente la media query
       @content;
-    }
+    } 
   } @else {
     @error 'No value found for `#{$breakpoint}`. Please check `$breakpoints`.';
   }
