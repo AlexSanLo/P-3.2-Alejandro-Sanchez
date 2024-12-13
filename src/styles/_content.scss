@@ -181,6 +181,10 @@
                         @include respond-to("small") {
                             width: $width-hr-about-small; 
                         }
+
+                        @include respond-to("narrow") {
+                            width: $width-hr-about-narrow; 
+                        }
                     }
 
                     div {         
@@ -197,6 +201,12 @@
                                 
                                 @include respond-to("small") {
                                     padding-right: $padding-right-images-about-small;
+                                }
+
+                                @include respond-to("narrow") {
+                                    padding-right: $padding-right-images-about-small;
+                                    height: $height-img-about-narrow;
+                                    width: $width-img-about-narrow;
                                 }
                             }
 
