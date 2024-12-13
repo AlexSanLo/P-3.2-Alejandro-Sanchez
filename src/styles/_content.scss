@@ -20,6 +20,10 @@
                 @include respond-to("small") {
                     font-size: $typography-tamanio-h3;
                 }
+
+                @include respond-to("narrow") {
+                    font-size: $typography-tamanio-h4;
+                }
             }
 
             p:nth-child(2) {
@@ -29,6 +33,10 @@
 
                 @include respond-to("small") {
                     font-size: $typography-tamanio-h2;
+                }
+
+                @include respond-to("narrow") {
+                    font-size: $typography-tamanio-h3;
                 }
             }
 
@@ -40,6 +48,10 @@
 
                 @include respond-to("small") {
                     font-size: $typography-tamanio-h3;
+                }
+
+                @include respond-to("narrow") {
+                    font-size: $typography-tamanio-h4;
                 }
             }
 
@@ -57,6 +69,11 @@
                 @include respond-to("small") {
                     font-size: $typography-tamanio-small;
                     width: $width-index-p4-small;
+                }
+
+                @include respond-to("narrow") {
+                    font-size: $typography-tamanio-small;
+                    width: $width-index-p4-narrow;
                 }
             }
 
