@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .inicio {
-    
+
 
     section {
         justify-content: center;
@@ -96,7 +96,7 @@
                         border: none;
                         color: $typography-colors-white;
                         font-weight: $typography-peso-bold;
-    
+
                         &:hover {
                             background-color: $color-blue;
                             color: $color-black;
@@ -104,7 +104,7 @@
                     }
 
                 }
-              
+
             }
         }
 
@@ -120,7 +120,7 @@
         div:first-child {
             display: flex;
 
-            article {   
+            article {
                 display: block;
 
                 div:first-child {
@@ -131,13 +131,13 @@
                         margin-top: $margin-top-article-p1;
                         margin-bottom: 0;
 
-                        @include respond-to("medium"){
+                        @include respond-to("medium") {
                             font-size: $typography-tamanio-h1;
                             display: flex;
                             justify-content: center;
                         }
 
-                        @include respond-to("small"){
+                        @include respond-to("small") {
                             font-size: $typography-tamanio-h2;
                         }
 
@@ -166,49 +166,49 @@
                             justify-content: center;
                         }
                     }
-                    
+
                     hr {
                         width: $width-hr-about;
                         height: $height-hr;
                         background-color: $color-blue;
-                        margin: 0; 
-                    
+                        margin: 0;
+
                         @include respond-to("medium") {
                             width: $width-hr-about-medium;
-                            margin: 0 auto; 
+                            margin: 0 auto;
                         }
-                    
+
                         @include respond-to("small") {
-                            width: $width-hr-about-small; 
+                            width: $width-hr-about-small;
                         }
 
                         @include respond-to("narrow") {
-                            width: $width-hr-about-narrow; 
+                            width: $width-hr-about-narrow;
                         }
                     }
 
-                    div {         
+                    div {
                         display: flex;
 
-                            img {
-                                padding-right: $padding-right-images-about;
+                        img {
+                            padding-right: $padding-right-images-about;
 
-                                @include respond-to("medium") {
-                                    padding-right: $padding-right-images-about-medium;
-                                    margin: 0 auto; 
-                                    display: block; 
-                                }
-                                
-                                @include respond-to("small") {
-                                    padding-right: $padding-right-images-about-small;
-                                }
-
-                                @include respond-to("narrow") {
-                                    padding-right: $padding-right-images-about-small;
-                                    height: $height-img-about-narrow;
-                                    width: $width-img-about-narrow;
-                                }
+                            @include respond-to("medium") {
+                                padding-right: $padding-right-images-about-medium;
+                                margin: 0 auto;
+                                display: block;
                             }
+
+                            @include respond-to("small") {
+                                padding-right: $padding-right-images-about-small;
+                            }
+
+                            @include respond-to("narrow") {
+                                padding-right: $padding-right-images-about-small;
+                                height: $height-img-about-narrow;
+                                width: $width-img-about-narrow;
+                            }
+                        }
 
                     }
                 }
@@ -216,7 +216,7 @@
             }
 
             .puntos-fuertes {
-                display: block;               
+                display: block;
                 padding-right: $padding-right-puntosfuertes;
                 margin-top: $margin-top-puntosfuertes;
 
@@ -271,7 +271,7 @@
                 }
 
             }
-          
+
         }
 
     }
@@ -288,45 +288,58 @@
             margin-top: $margin-top-proyects-section-div;
             display: flex;
             justify-content: center;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+
 
             div:nth-child(2) {
                 display: block;
                 margin-left: $margin-left-proyects-div-2;
+                padding: 0;
+                margin: 0 auto;
+                text-align: center;
+
 
                 h3 {
                     font-size: $typography-tamanio-h3;
                     margin-top: $margin-top-h3-proyects;
+
+                    @include respond-to("narrow") {
+                        text-align: center;
+                    }
                 }
-                
+
                 p {
                     width: $width-p-proyects;
-                    margin: 0 auto; 
+                    margin: 0 auto;
                     text-align: center;
-                    justify-content: center;
-                    align-items: center; 
                     font-size: $typography-tamanio-paragraph;
-                
+
                     @include respond-to("medium") {
                         width: $width-p-proyects-medium;
                     }
-                
+
                     @include respond-to("small") {
                         width: $width-p-proyects-small;
                     }
 
                     @include respond-to("narrow") {
-                        width: $width-p-proyects-narrow;
+                        text-align: center;
+                        margin: 0 auto;
                     }
                 }
+            }
 
-                img {
-                    @include respond-to("narrow") {
-                        width: $width-img-proyects-nattow;
-                        height: $height-img-proyects-narrow;
-                    }
+            img {
+                margin: 0 auto;
+                display: block;
+
+                @include respond-to("narrow") {
+                    width: $width-img-proyects-narrow;
+                    height: $height-img-proyects-narrow;
+                    margin: 0 auto;
                 }
-                
-
             }
 
             @include respond-to("medium") {
@@ -339,31 +352,34 @@
                 text-align: center;
             }
 
+            @include respond-to("narrow") {
+                display: block;
+                text-align: center;
+            }
         }
-
     }
 
     hr {
         width: $width-hr-proyects;
         height: $height-hr;
         background-color: $color-blue;
-        margin: 0; 
+        margin: 0 auto;
 
         @include respond-to("medium") {
             width: $width-hr-proyects-medium;
             height: $height-hr;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
 
         @include respond-to("small") {
             width: $width-hr-proyects-small;
             height: $height-hr;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
 
         @include respond-to("narrow") {
             width: $width-hr-proyects-narrow;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
     }
 
@@ -372,11 +388,20 @@
         align-items: center;
         justify-content: center;
 
+        @include respond-to("narrow") {
+            flex-direction: column;
+            text-align: center;
+        }
+
         a {
             margin-bottom: $margin-top-botton-buttons;
             margin-top: $margin-top-botton-buttons;
             margin-right: $margin-right-buttons;
             margin-left: $margin-left-buttons;
+
+            @include respond-to("narrow") {
+                margin: 10px auto;
+            }
 
             button {
                 font-family: $typography-fonts-family-1;
@@ -392,8 +417,6 @@
                     color: $color-black;
                 }
             }
-
         }
-      
     }
 }
