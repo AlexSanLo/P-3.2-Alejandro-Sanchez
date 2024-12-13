@@ -301,7 +301,9 @@
                 p {
                     width: $width-p-proyects;
                     margin: 0 auto; 
-                    text-align: center; 
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center; 
                     font-size: $typography-tamanio-paragraph;
                 
                     @include respond-to("medium") {
@@ -345,19 +347,23 @@
         width: $width-hr-proyects;
         height: $height-hr;
         background-color: $color-blue;
+        margin: 0; 
 
         @include respond-to("medium") {
             width: $width-hr-proyects-medium;
             height: $height-hr;
+            margin: 0 auto; 
         }
 
         @include respond-to("small") {
             width: $width-hr-proyects-small;
             height: $height-hr;
+            margin: 0 auto; 
         }
 
         @include respond-to("narrow") {
             width: $width-hr-proyects-narrow;
+            margin: 0 auto; 
         }
     }
 
