@@ -111,7 +111,7 @@
                     p {
                         font-size: $typography-tamanio-h1;
                         font-family: $typography-fonts-family-2;
-                        margin-top: 40px;
+                        margin-top: $margin-top-article-p1;
                         margin-bottom: 0;
 
                         @include respond-to("medium"){
@@ -131,16 +131,16 @@
                     p {
                         font-size: $typography-tamanio-paragraph;
                         width: $width-paragraph-article;
-                        margin-top: 20px;
+                        margin-top: $margin-top-article-p2;
                     }
                 }
 
                 div:nth-child(3) {
-                    margin-top: 20px;
+                    margin-top: $margin-top-article-p3;
 
                     p {
                         font-size: $typography-tamanio-h3;
-                        margin-bottom: 0px;
+                        margin-bottom: $margin-bottom-article-p3;
                         float: left;
 
                         @include respond-to("medium") {
@@ -157,12 +157,12 @@
                         margin: 0; 
                     
                         @include respond-to("medium") {
-                            width: 500px;
+                            width: $width-hr-about-medium;
                             margin: 0 auto; 
                         }
                     
                         @include respond-to("small") {
-                            width: 400px; 
+                            width: $width-hr-about-small; 
                         }
                     }
 
@@ -173,13 +173,13 @@
                                 padding-right: $padding-right-images-about;
 
                                 @include respond-to("medium") {
-                                    padding-right: 22px;
+                                    padding-right: $padding-right-images-about-medium;
                                     margin: 0 auto; 
                                     display: block; 
                                 }
                                 
                                 @include respond-to("small") {
-                                    padding-right: 18px;
+                                    padding-right: $padding-right-images-about-small;
                                 }
                             }
 
@@ -190,8 +190,8 @@
 
             .puntos-fuertes {
                 display: block;               
-                padding-right: 20px;
-                margin-top: 100px;
+                padding-right: $padding-right-puntosfuertes;
+                margin-top: $margin-top-puntosfuertes;
 
                 p:first-child {
                     display: flex;
@@ -200,9 +200,9 @@
                 }
 
                 li {
-                    margin-bottom: 80px;
+                    margin-bottom: $margin-left-bottom;
                     font-size: $typography-tamanio-paragraph;
-                    margin-left: 30px;
+                    margin-left: $margin-left-li;
                 }
 
             }
