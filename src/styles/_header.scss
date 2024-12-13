@@ -32,6 +32,10 @@ header {
                     @include respond-to("small") {
                         font-size: $typography-tamanio-paragraph;
                     }
+
+                    &:hover {
+                        color: $color-black;
+                    }
                 }
 
             }

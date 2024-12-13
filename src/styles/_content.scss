@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .inicio {
+    
 
     section {
         justify-content: center;
@@ -15,12 +16,20 @@
                 font-size: $typography-tamanio-h2;
                 font-family: $typography-fonts-family-1;
                 padding-top: $padding-top-content-p;
+
+                @include respond-to("small") {
+                    font-size: $typography-tamanio-h3;
+                }
             }
 
             p:nth-child(2) {
                 font-family: $typography-fonts-family-2;
                 font-size: $typography-tamanio-h1;
                 padding-top: $padding-top-content-p2;
+
+                @include respond-to("small") {
+                    font-size: $typography-tamanio-h2;
+                }
             }
 
             p:nth-child(3) {
@@ -28,6 +37,10 @@
                 font-size: $typography-tamanio-h2;
                 padding-top: $padding-top-content-p2;
                 font-weight: $typography-peso-bold;
+
+                @include respond-to("small") {
+                    font-size: $typography-tamanio-h3;
+                }
             }
 
             p:nth-child(4) {
@@ -35,6 +48,16 @@
                 font-size: $typography-tamanio-paragraph;
                 padding-top: $padding-top-content-p;
                 width: $width-index-p4;
+
+                @include respond-to("medium") {
+                    font-size: $typography-tamanio-paragraph;
+                    width: $width-index-p4-medium;
+                }
+
+                @include respond-to("small") {
+                    font-size: $typography-tamanio-small;
+                    width: $width-index-p4-small;
+                }
             }
 
             div {
@@ -70,4 +93,184 @@
 
     }
 
+}
+
+.about {
+    font-family: $typography-fonts-family-1;
+
+    section {
+
+        div:first-child {
+            display: flex;
+
+            article {   
+                display: block;
+
+                div:first-child {
+
+                    p {
+                        font-size: $typography-tamanio-h1;
+                        font-family: $typography-fonts-family-2;
+                        margin-top: 40px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                div:nth-child(2) {
+                    p {
+                        font-size: $typography-tamanio-paragraph;
+                        width: $width-paragraph-article;
+                        margin-top: 20px;
+                    }
+                }
+
+                div:nth-child(3) {
+                    margin-top: 20px;
+
+                    p {
+                        font-size: $typography-tamanio-h3;
+                        margin-bottom: 0px;
+                        float: left;
+                    }
+                    
+                    hr {
+                        width: $width-hr-about;
+                        height: $height-hr-about;
+                        background-color: $color-blue;
+                        margin-left: $margin-left-hr-about;
+                    }
+
+                    div {         
+                        display: flex;
+
+                            img {
+                                padding-right: $padding-right-images-about;
+                            }
+
+                    }
+                }
+
+            }
+
+            .puntos-fuertes {
+                display: block;               
+                padding-right: 20px;
+                margin-top: 100px;
+
+                p:first-child {
+                    display: flex;
+                    font-size: $typography-tamanio-h3;
+                    justify-content: center;
+                }
+
+                li {
+                    margin-bottom: 80px;
+                    font-size: $typography-tamanio-paragraph;
+                    margin-left: 30px;
+                }
+
+            }
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                margin-bottom: $margin-top-botton-buttons;
+                margin-top: $margin-top-botton-buttons;
+                margin-right: $margin-right-buttons;
+                margin-left: $margin-left-buttons;
+
+                button {
+                    font-family: $typography-fonts-family-1;
+                    background-color: $color-black;
+                    width: $width-buttons;
+                    height: $height-buttons;
+                    border: none;
+                    color: $typography-colors-white;
+                    font-weight: $typography-peso-bold;
+
+                    &:hover {
+                        background-color: $color-blue;
+                        color: $color-black;
+                    }
+                }
+
+            }
+          
+        }
+
+    }
+}
+
+.proyects {
+    margin-bottom: 20px;
+
+    section {
+        margin-bottom: 30px;
+        font-family: $typography-fonts-family-1;
+
+        div {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            div:nth-child(2) {
+                display: block;
+                margin-left: 60px;
+
+                h3 {
+                    font-size: $typography-tamanio-h3;
+                    margin-top: 0px;
+                }
+                
+                p {
+                    width: 605px;
+                    margin: 0 auto; 
+                    text-align: center; 
+                    font-size: $typography-tamanio-paragraph;
+                
+                    @include respond-to("medium") {
+                        width: 420px;
+                    }
+                
+                    @include respond-to("small") {
+                        width: 300px;
+                    }
+                }
+                
+
+            }
+
+            @include respond-to("medium") {
+                display: block;
+                text-align: center;
+            }
+
+            @include respond-to("small") {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    hr {
+        width: 1060px;
+        height: 8px;
+        background-color: $color-blue;
+
+        @include respond-to("medium") {
+            width: 580px;
+            height: 8px;
+        }
+
+        @include respond-to("small") {
+            width: 515px;
+            height: 8px;
+        }
+    }
 }
