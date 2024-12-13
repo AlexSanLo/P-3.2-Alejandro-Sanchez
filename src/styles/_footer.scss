@@ -23,6 +23,11 @@ footer {
                         width: $width-icons-small;
                         height: $height-icons-small;
                     }
+
+                    @include respond-to("narrow") {
+                        width: $width-icons-narrow;
+                        height: $height-icons-narrow;
+                    }
                 }
 
                 @include respond-to("small") {
@@ -38,6 +43,9 @@ footer {
                     font-size: $typography-tamanio-paragraph;
                 }
 
+                @include respond-to("narrow") {
+                    font-size: $typography-tamanio-small;
+                }
             }
 
         }

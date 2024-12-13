@@ -18,6 +18,10 @@ header {
                 @include respond-to("small") {
                     font-size: $typography-tamanio-paragraph;
                 }
+
+                @include respond-to("narrow") {
+                    font-size: $typography-tamanio-small;
+                }
             }
 
             nav {
